@@ -7,13 +7,13 @@
   "theme_color": "#00FFCC",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "https://via.placeholder.com/192/00FFCC/0E0E12?text=RIDBY",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "icon.png",
+      "src": "https://via.placeholder.com/512/00FFCC/0E0E12?text=RIDBY",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
