@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0E0E12;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* 🎨 Title Animation & Glow Effect */
+.intro-animation {
+    animation: fadeInDown 1.2s ease-out;
+}
+
+.glow-text {
+    color: #00FFCC;
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #00FFCC88, 0 0 20px #00FFCC44;
+    animation: pulseGlow 2s infinite alternate;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseGlow {
+    0% {
+        text-shadow: 0 0 8px #00FFCCAA, 0 0 15px #00FFCC55;
+    }
+    100% {
+        text-shadow: 0 0 18px #00FFCCFF, 0 0 30px #00FFCC99;
+    }
+}
+
+.subtitle {
+    color: #8A8A9E;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.status-box {
+    background: #161822;
+    color: #00FFCC;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #00FFCC33;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #1A1C26;
+    border: 2px solid;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-aim { color: #00E5FF; border-color: #00E5FF; }
+.btn-ram { color: #00FFCC; border-color: #00FFCC; }
+.btn-gpu { color: #FFD700; border-color: #FFD700; }
+.btn-ultra { color: #FF3366; border-color: #FF3366; }
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.log {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #aaa;
+}

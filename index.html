@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIDBY FPS BOOSTER</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 🎬 Opening Animated Title -->
+        <div class="intro-animation">
+            <h1 class="glow-text">RIDBY GAMING SIDE</h1>
+        </div>
+        <p class="subtitle">-- MOBILE GAME & OPTIMIZER TOOL --</p>
+
+        <div class="status-box" id="statusBox">
+            STATUS: SYSTEM READY FOR BOOST
+        </div>
+
+        <button class="btn btn-aim" onclick="optimizeTouchAim()">🎯 CALIBRATE TOUCH & AIM RESPONSE</button>
+        <button class="btn btn-ram" onclick="cleanRam()">⚡ CLEAN RAM & BACKGROUND CACHE</button>
+        <button class="btn btn-gpu" onclick="cleanGpu()">🎯 FLUSH GRAPHICS DRIVER CACHE</button>
+        <button class="btn btn-ultra" onclick="ultraBoost()">🔥 ULTRA GAME BOOST MODE</button>
+
+        <div class="log" id="logBox">Waiting for user command...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
